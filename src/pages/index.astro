@@ -9,6 +9,7 @@ import Section1 from "../components/Section1.astro";
 import Section2 from "../components/Section2.astro";
 import SoMe from "../components/SoMe.astro";
 import Sustainability from "../components/Sustainability.astro";
+import Card from "../components/Card.astro";
 ---
 
 <MainLayout title="Titel">
@@ -16,10 +17,12 @@ import Sustainability from "../components/Sustainability.astro";
   <Section1 />
   <Section2 />
   <section id="trustpilot">
-    <p>Her laver Camilla Trustpilot med cards komponenter</p>
+    <h2 class="text-h1Mobile md:text-h1 font-code uppercase text-Black-500 pb-16">Rejseanmeldelser</h2>
+    <p class="text-subheadingMobile md:text-subheading font-sans text-Black-500 pb-32">Det siger vores elever</p>
+    <Card></Card>
   </section>
   <SoMe />
-  <Sustainability/>
+  <Sustainability />
 
   <!-- 
   <article class="max-w-screen-xl mx-auto">

@@ -19,49 +19,49 @@ export default {
 
       /* Font Sizes */
       fontSize: {
-        display: ["6rem", { fontWeight: "700" }], // 96px Desktop (Bold)
-        displayMobile: ["3rem", { fontWeight: "700" }], // 48px Mobile (Bold)
+        display: ["6rem", { lineHeight: "1.25", fontWeight: "700" }], // 96px Desktop (Bold)
+        displayMobile: ["3rem", { lineHeight: "1.25", fontWeight: "700" }], // 48px Mobile (Bold)
 
-        h1: ["3.375rem", { fontWeight: "700" }], // 54px Desktop (Bold)
-        h1Mobile: ["2rem", { fontWeight: "700" }], // 32px Mobile (Bold)
+        h1: ["3.375rem", { lineHeight: "1.25", fontWeight: "700" }], // 54px Desktop (Bold)
+        h1Mobile: ["2rem", { lineHeight: "1.25", fontWeight: "700" }], // 32px Mobile (Bold)
 
-        h2: ["2.5rem", { fontWeight: "700" }], // 40px Desktop (Bold)
-        h2Mobile: ["1.5rem", { fontWeight: "700" }], // 24px Mobile (Bold)
+        h2: ["2.5rem", { lineHeight: "1.25", fontWeight: "700" }], // 40px Desktop (Bold)
+        h2Mobile: ["1.5rem", { lineHeight: "1.25", fontWeight: "700" }], // 24px Mobile (Bold)
 
-        h3: ["2rem", { fontWeight: "700" }], // 32px Desktop (Bold)
-        h3Mobile: ["1rem", { fontWeight: "700" }], // 16px Mobile (Bold)
+        h3: ["2rem", { lineHeight: "1.25", fontWeight: "700" }], // 32px Desktop (Bold)
+        h3Mobile: ["1rem", { lineHeight: "1.25", fontWeight: "700" }], // 16px Mobile (Bold)
 
-        h4: ["1.25rem", { fontWeight: "700" }], // 20px Desktop (Bold)
-        h4Mobile: ["0.875rem", { fontWeight: "700" }], // 14px Mobile (Bold)
+        h4: ["1.25rem", { lineHeight: "1.25", fontWeight: "700" }], // 20px Desktop (Bold)
+        h4Mobile: ["0.875rem", { lineHeight: "1.25", fontWeight: "700" }], // 14px Mobile (Bold)
 
-        subheading: ["2rem", { fontWeight: "600" }], // 32px Desktop (Semibold)
-        subheadingMobile: ["1rem", { fontWeight: "600" }], // 16px Mobile (Semibold)
+        subheading: ["2rem", { lineHeight: "1.25", fontWeight: "600" }], // 32px Desktop (Semibold)
+        subheadingMobile: ["1rem", { lineHeight: "1.25", fontWeight: "600" }], // 16px Mobile (Semibold)
 
-        subheadingItalic: ["2rem", { fontStyle: "italic", fontWeight: "600" }], // 32px Desktop (Italic, Semibold)
-        subheadingItalicMobile: ["1rem", { fontStyle: "italic", fontWeight: "600" }], // 16px Mobile (Italic, Semibold)
+        subheadingItalic: ["2rem", { lineHeight: "1.25", fontStyle: "italic", fontWeight: "600" }], // 32px Desktop (Italic, Semibold)
+        subheadingItalicMobile: ["1rem", { lineHeight: "1.25", fontStyle: "italic", fontWeight: "600" }], // 16px Mobile (Italic, Semibold)
 
-        bodyLarge: ["1.25rem", { fontWeight: "400" }], // 20px Desktop (Regular)
-        bodyLargeMobile: ["0.875rem", { fontWeight: "400" }], // 14px Mobile (Regular)
+        bodyLarge: ["1.25rem", { lineHeight: "1.25", fontWeight: "400" }], // 20px Desktop (Regular)
+        bodyLargeMobile: ["0.875rem", { lineHeight: "1.25", fontWeight: "400" }], // 14px Mobile (Regular)
 
-        bodyLargeBold: ["1.25rem", { fontWeight: "700" }], // 20px Desktop (Bold)
-        bodyLargeBoldMobile: ["0.875rem", { fontWeight: "700" }], // 14px Mobile (Bold)
+        bodyLargeBold: ["1.25rem", { lineHeight: "1.25", fontWeight: "700" }], // 20px Desktop (Bold)
+        bodyLargeBoldMobile: ["0.875rem", { lineHeight: "1.25", fontWeight: "700" }], // 14px Mobile (Bold)
 
-        bodyMedium: ["1rem", { fontWeight: "400" }], // 16px Desktop (Regular)
+        bodyMedium: ["1rem", { lineHeight: "1.25", fontWeight: "400" }], // 16px Desktop (Regular)
 
-        bodySmall: ["0.75rem", { fontWeight: "400" }], // 12px Desktop and Mobile (Regular)
+        bodySmall: ["0.75rem", { lineHeight: "1.25", fontWeight: "400" }], // 12px Desktop and Mobile (Regular)
 
-        buttonLarge: ["1.25rem", { fontWeight: "600" }], // 20px Desktop (Semibold)
-        buttonLargeMobile: ["0.875rem", { fontWeight: "600" }], // 14px Mobile (Semibold)
+        buttonLarge: ["1.25rem", { lineHeight: "1.25", fontWeight: "600" }], // 20px Desktop (Semibold)
+        buttonLargeMobile: ["0.875rem", { lineHeight: "1.25", fontWeight: "600" }], // 14px Mobile (Semibold)
 
-        buttonSmall: ["1rem", { fontWeight: "600" }], // 16px Desktop (Semibold)
+        buttonSmall: ["1rem", { lineHeight: "1.25", fontWeight: "600" }], // 16px Desktop (Semibold)
 
-        badge: ["0.75rem", { fontWeight: "600" }], // 12px Desktop (Semibold)
+        badge: ["0.75rem", { lineHeight: "1.25", fontWeight: "600" }], // 12px Desktop (Semibold)
 
-        navigationLink: ["1rem", { fontWeight: "600" }], // 16px Desktop (Semibold)
-        navigationLinkMobile: ["0.875rem", { fontWeight: "600" }], // 14px Mobile (Semibold)
+        navigationLink: ["1rem", { lineHeight: "1.25", fontWeight: "600" }], // 16px Desktop (Semibold)
+        navigationLinkMobile: ["0.875rem", { lineHeight: "1.25", fontWeight: "600" }], // 14px Mobile (Semibold)
 
-        link: ["1.25rem", { fontWeight: "600" }], // 20px Desktop (Semibold)
-        linkMobile: ["0.875rem", { fontWeight: "600" }], // 14px Mobile (Semibold)
+        link: ["1.25rem", { lineHeight: "1.25", fontWeight: "600" }], // 20px Desktop (Semibold)
+        linkMobile: ["0.875rem", { lineHeight: "1.25", fontWeight: "600" }], // 14px Mobile (Semibold)
       },
 
       /* Border/Stroke */
@@ -144,6 +144,7 @@ export default {
 
       spacing: {
         4: "4px",
+        8: "8px",
         12: "12px",
         16: "16px",
         24: "24px",
@@ -154,7 +155,7 @@ export default {
       },
     },
 
-    padding: {
+    margin: {
       mobile: "32px",
       desktop: "180px",
     },
@@ -162,7 +163,6 @@ export default {
     boxShadow: {
       dropshadow: "0 4px 4px rgba(89, 89, 89, 0.25)",
     },
-    
   },
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms"), require("@tailwindcss/aspect-ratio"), require("@tailwindcss/container-queries")],
 };
