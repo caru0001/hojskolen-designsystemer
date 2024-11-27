@@ -143,22 +143,14 @@ export default {
       },
 
       spacing: {
-        xxs: "8px",
-        xs: "16px",
-        s: "24px",
-        sm: "32px",
-        m: "40px",
-        ml: "48px",
-        lg: "64px",
-        xl: "80px",
-        "2xl": "96px",
-        "3xl": "112px",
-        "4xl": "128px",
-        "5xl": "144px",
-        "6xl": "160px",
-        "7xl": "192px",
-        "8xl": "224px",
-        "9xl": "424px",
+        4: "4px",
+        12: "12px",
+        16: "16px",
+        24: "24px",
+        32: "32px",
+        48: "48px",
+        190: "190px",
+        298: "298px",
       },
     },
 
@@ -170,7 +162,7 @@ export default {
     boxShadow: {
       dropshadow: "0 4px 4px rgba(89, 89, 89, 0.25)",
     },
-
+    
   },
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms"), require("@tailwindcss/aspect-ratio"), require("@tailwindcss/container-queries")],
 };
