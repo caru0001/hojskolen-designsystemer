@@ -1,4 +1,28 @@
 ---
-
+import { Image } from "astro:assets";
+import indexsektion1 from "../assets/images/index_sektion1.webp";
+import Button from "../components/Button.astro";
 ---
-<p>Section 1</p>
+
+<div class="p-8 md:p-16 rounded-md grid grid-cols-1 md:grid-cols-2 items-center">
+  <!-- Text Section -->
+  <div class="space-y-24 order-2 md:order-1">
+    <h1 class="text-h1Mobile md:text-h1 font-code font-bold text-Black-500">ER DU KLAR TIL DIT LIVS EVENTYR?</h1>
+    <!-- Image for mobile -->
+    <div class="mt-6 block md:hidden">
+      <Image src={indexsektion1} alt="Hiking" class="rounded-large w-full h-auto" />
+    </div>
+    <p class="text-bodyLargeMobile md:text-bodyLarge mt-48 text-Black-500">HØJSKOLENDK er en dansk højskole for unge i alderen ca. 18-30 år. Vi brænder for oplevelser,       fællesskab og mødet med nye mennesker og kulturer; derfor laver vi eventyrlige højskoleophold i       udlandet.</p>
+    <p class="text-bodyLargeMobile md:text-bodyLarge text-Black-500">HØJSKOLENDK er noget for dig, hvis du vil på højskole i udlandet og er vild med       højskolefællesskab, vil med på et fantastisk rejseeventyr, glæder dig til at lære om fremmede       kulturer, vil rejse med rygsæk, drømmer om en fed grupperejse med andre skønne unge, vil opleve       et stærkt sammenhold og ønsker inspirerende og meningsfuld undervisning. Du er sikker på en       tryg rejseoplevelse da vi er medlem af Rejsegarantifonden.</p>
+    <p class="text-bodyLargeBoldMobile md:text-bodyLargeBold text-Black-500">Vi glæder os til at lære dig at kende!</p>
+    <!-- Button -->
+    <div>
+      <button class="bg-Orange-500 hover:bg-Orange-200 font-sans text-linkMobile sm:text-link text-Black-500 rounded-large px-48 py-16 shadow-dropshadow"> Vælg dit eventyr </button>
+    </div>
+  </div>
+
+  <!-- Image Section for desktop -->
+  <div class="hidden md:block order-1 md:order-2">
+    <Image src={indexsektion1} alt="Hiking" class="rounded-large w-full h-auto" />
+  </div>
+</div>

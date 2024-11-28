@@ -1,4 +1,26 @@
 ---
-
+import { Image } from "astro:assets";
+import infomode from "../assets/images/infomode.webp";
 ---
-<p>Section 2</p>
+
+<div class="p-8 md:p-16 rounded-md grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+  <!-- Image Section -->
+  <div class="order-1">
+    <Image src={infomode} alt="People walking" class="rounded-large w-full h-auto" />
+  </div>
+
+  <!-- Text Section -->
+  <div class="text-left space-y-6 order-2">
+    <h1 class="text-h1Mobile md:text-h1 font-code font-bold text-Black-500">MØD OS TIL INFOMØDE</h1>
+    <p class="text-bodyLargeMobile md:text-bodyLarge text-Black-500">Hvis du drømmer om et fantastisk rejseeventyr med masser af adventure, vilde naturoplevelser og       spændende kulturmøder så smut forbi et af vores hyggelige infomøder i København eller Aarhus –       eller mød os på et online infomøde.</p>
+    <ul class="list-disc list-inside text-bodyLargeMobile md:text-bodyLarge text-Black-500">
+      <li><strong>København:</strong> 16. januar 2025, kl. 17.00-19.00</li>
+      <li><strong>Aarhus:</strong> 14. januar 2025, kl. 17.00-19.00</li>
+      <li><strong>Online:</strong> 21. januar 2025, kl. 17.00-19.00</li>
+    </ul>
+    <!-- Button -->
+    <div>
+      <button class="bg-Orange-500 hover:bg-Orange-200 font-sans text-linkMobile sm:text-link text-Black-500 rounded-large px-48 py-16 shadow-dropshadow"> Tilmeld dig infomøde </button>
+    </div>
+  </div>
+</div>
