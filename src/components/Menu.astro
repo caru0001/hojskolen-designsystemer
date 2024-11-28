@@ -1,11 +1,14 @@
 ---
-
+import { Image } from "astro:assets";
+import logo from "../assets/images/logo.webp";
 ---
 
 <div x-data="{ showmenu: false }" class="w-full max-w-screen-xl mx-auto">
   <div id="navbar" class="flex flex-row justify-between">
-    <div id="logo" class="text-4xl">
-      <a href="#">Logo</a>
+    <div id="logo">
+      <a href="#">
+        <img src={logo} alt="Logo" class="h-12 w-auto" />
+      </a>
     </div>
 
     <nav id="desktopmenu" class="hidden lg:block">
