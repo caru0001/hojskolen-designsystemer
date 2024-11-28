@@ -150,6 +150,8 @@ export default {
         24: "24px",
         32: "32px",
         48: "48px",
+        64: "64px",
+        108: "108px",
         190: "190px",
         298: "298px",
       },
@@ -157,7 +159,7 @@ export default {
 
     margin: {
       mobile: "32px",
-      desktop: "180px",
+      desktop: "150px",
     },
 
     boxShadow: {

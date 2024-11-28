@@ -1,26 +1,32 @@
 ---
 import { Image } from "astro:assets";
 import infomode from "../assets/images/infomode.webp";
+import Button from "../components/Button.astro";
 ---
 
-<div class="p-8 md:p-16 rounded-md grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+<div class="md:grid md:grid-cols-2 gap-48 mx-mobile lg:mx-desktop pt-108 pb-108">
   <!-- Image Section -->
   <div class="order-1">
-    <Image src={infomode} alt="People walking" class="rounded-large w-full h-auto" />
+    <Image src={infomode} alt="People walking" class="hidden md:block rounded-large w-full h-auto" />
   </div>
 
   <!-- Text Section -->
-  <div class="text-left space-y-6 order-2">
-    <h1 class="text-h1Mobile md:text-h1 font-code font-bold text-Black-500">MØD OS TIL INFOMØDE</h1>
-    <p class="text-bodyLargeMobile md:text-bodyLarge text-Black-500">Hvis du drømmer om et fantastisk rejseeventyr med masser af adventure, vilde naturoplevelser og       spændende kulturmøder så smut forbi et af vores hyggelige infomøder i København eller Aarhus –       eller mød os på et online infomøde.</p>
-    <ul class="list-disc list-inside text-bodyLargeMobile md:text-bodyLarge text-Black-500">
-      <li><strong>København:</strong> 16. januar 2025, kl. 17.00-19.00</li>
-      <li><strong>Aarhus:</strong> 14. januar 2025, kl. 17.00-19.00</li>
-      <li><strong>Online:</strong> 21. januar 2025, kl. 17.00-19.00</li>
+  <div class="">
+    <h1 class="text-h1Mobile md:text-h1 font-code pb-32">MØD OS TIL INFOMØDE</h1>
+    <!-- Image for mobile -->
+    <div class="mt-6 block md:hidden pb-32">
+      <Image src={infomode} alt="Hiking" class="rounded-large w-full h-auto" />
+    </div>
+    <p class="text-bodyLargeMobile md:text-bodyLarge pb-32">Hvis du drømmer om et fantastisk rejseeventyr med masser af adventure, vilde naturoplevelser og spændende kulturmøder så smut forbi et af vores hyggelige infomøder i København eller Aarhus - eller mød os på et online infomøde.</p>
+    <ul class="list-disc list-inside text-bodyLargeMobile md:text-bodyLarge pb-24">
+      <p class="text-bodyLargeBoldMobile md:text-bodyLargeBold pb-4">København:</p>
+      <li class="pb-16">16. januar 2025, kl. 17.00-19.00</li>
+      <p class="text-bodyLargeBoldMobile md:text-bodyLargeBold pb-4">Aarhus:</p>
+      <li class="pb-16">14. januar 2025, kl. 17.00-19.00</li>
+      <p class="text-bodyLargeBoldMobile md:text-bodyLargeBold pb-4">Online:</p>
+      <li class="pb-16">21. januar 2025, kl. 17.00-19.00</li>
     </ul>
     <!-- Button -->
-    <div>
-      <button class="bg-Orange-500 hover:bg-Orange-200 font-sans text-linkMobile sm:text-link text-Black-500 rounded-large px-48 py-16 shadow-dropshadow"> Tilmeld dig infomøde </button>
-    </div>
+    <Button>Tilmeld dig infomøde</Button>
   </div>
 </div>

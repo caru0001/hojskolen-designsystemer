@@ -1,4 +1,18 @@
 ---
-
+import { Image } from "astro:assets";
+import forrest from "../assets/images/forrest.webp";
+import forrestlogo from "../assets/images/forrestlogo.webp";
 ---
-<p>Sustainability</p>
+
+<div class="md:grid md:grid-cols-2 gap-48 mx-mobile lg:mx-desktop pt-108 pb-32 lg:pb-4">
+  <div>
+    <Image src={forrest} alt="Forrest" class="rounded-large w-full md:h-2/3" />
+  </div>
+  <div>
+    <h1 class="text-h1Mobile lg:text-h1 font-code pb-24 pt-32 uppercase ">Bæredygtighed</h1>
+    <p class="text-bodyLargeMobile md:text-bodyLarge pb-32">Vi tror på, at alle kan gøre en forskel - selv en højskole fra Danmark. Vi støtter derfor Verdens Skoves arbejde med bevarelse og bæredygtig brug af verdens skove Vi har allerede fredet 106.785 m2 regnskov. Det er vi stolte af i HØJSKOLENDK.</p>
+    <div class="flex justify-center">
+      <Image src={forrestlogo} alt="Verdens skove logo" class="w-56" />
+    </div>
+  </div>
+</div>

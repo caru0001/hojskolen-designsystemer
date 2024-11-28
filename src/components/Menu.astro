@@ -3,72 +3,77 @@ import { Image } from "astro:assets";
 import logo from "../assets/images/logo.webp";
 ---
 
-<div x-data="{ showmenu: false }" class="w-full max-w-screen-xl mx-auto">
-  <div id="navbar" class="flex flex-row justify-between">
+<div x-data="{ showmenu: false }" class="w-full max-w-screen-xl mx-auto px-32">
+  <!-- Navbar Container -->
+  <div id="navbar" class="flex items-center justify-between py-4">
+    <!-- Logo -->
     <div id="logo">
-      <a href="#">
-        <img src={logo} alt="Logo" class="h-12 w-auto" />
+      <a href="#" class="block">
+        <Image src={logo} alt="Logo" class="w-36 md:w-52" />
       </a>
     </div>
 
+    <!-- Desktop Navigation -->
     <nav id="desktopmenu" class="hidden lg:block">
-      <ul class="flex flex-row text-Black-500 space-x-48 text-navigationLink font-sans">
+      <ul class="flex items-center space-x-24 text-Black-500 text-navigationLink font-sans">
         <li class="relative group">
-          <a href="#" class="no-underline flex items-center">
+          <a href="#" class="flex items-center hover:text-Black-700 transition">
             HØJSKOLEOPHOLD
-            <span class="ml-2 w-2 h-2 border-l-2 border-b-2 border-Black-500 transform -rotate-45"></span>
           </a>
         </li>
         <li class="relative group">
-          <a href="#" class="no-underline flex items-center">
+          <a href="#" class="flex items-center hover:text-Black-700 transition">
             SOMMERHØJSKOLE
-            <span class="ml-2 w-2 h-2 border-l-2 border-b-2 border-Black-500 transform -rotate-45"></span>
           </a>
         </li>
-        <li><a href="#">PRISER</a></li>
+        <li>
+          <a href="#" class="hover:text-Black-700 transition">PRISER</a>
+        </li>
         <li class="relative group">
-          <a href="#" class="no-underline flex items-center">
+          <a href="#" class="flex items-center hover:text-Black-700 transition">
             OM OS
-            <span class="ml-2 w-2 h-2 border-l-2 border-b-2 border-Black-500 transform -rotate-45"></span>
           </a>
         </li>
         <li class="relative group">
-          <a href="#" class="no-underline flex items-center">
+          <a href="#" class="flex items-center hover:text-Black-700 transition">
             TILMELD
-            <span class="ml-2 w-2 h-2 border-l-2 border-b-2 border-Black-500 transform -rotate-45"></span>
           </a>
         </li>
-        <li><a href="#">INFOMØDER</a></li>
+        <li>
+          <a href="#" class="hover:text-Black-700 transition">INFOMØDER</a>
+        </li>
       </ul>
     </nav>
 
-    <button id="burgermenu" class="lg:hidden" x-on:click="showmenu = ! showmenu">
-      <span :class="{ 'rotate-45 translate-y-2': showmenu }" class="block w-8 h-0.5 bg-black mb-2 transition-all duration-300"></span>
-      <span :class="{ 'opacity-0': showmenu }" class="block w-8 h-0.5 bg-black mb-2 transition-all duration-300"></span>
-      <span :class="{ '-rotate-45 -translate-y-2': showmenu }" class="block w-8 h-0.5 bg-black transition-all duration-300"></span>
+    <!-- Hamburger Menu for Mobile -->
+    <button id="burgermenu" class="lg:hidden flex flex-col items-center justify-center space-y-4" x-on:click="showmenu = ! showmenu">
+      <span :class="{ 'rotate-45 translate-y-2': showmenu }" class="block w-24 h-0.5 bg-black transition-all duration-300"></span>
+      <span :class="{ 'opacity-0': showmenu }" class="block w-24 h-0.5 bg-black transition-all duration-300"></span>
+      <span :class="{ '-rotate-45 -translate-y-2': showmenu }" class="block w-24 h-0.5 bg-black transition-all duration-300"></span>
     </button>
   </div>
 
-  <nav id="mobilmenu" class="flex flex-col px-mobile" x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
-    <ul class="text-Black-500 text-navigationLink font-code space-y-32">
+  <!-- Mobile Menu -->
+  <nav id="mobilmenu" class="flex flex-col bg-Beige-500 py-6 px-4 lg:px-8" x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
+    <ul class="text-Black-500 text-navigationLink font-sans space-y-24">
       <li class="relative group flex items-center justify-between">
-        <a href="#">HØJSKOLEOPHOLD</a>
+        <a href="#" class="hover:text-Black-700 transition">HØJSKOLEOPHOLD</a>
         <span class="ml-2 w-2 h-2 border-l-2 border-b-2 border-Black-500 transform -rotate-45"></span>
       </li>
       <li class="relative group flex items-center justify-between">
-        <a href="#">SOMMERHØJSKOLE</a>
+        <a href="#" class="hover:text-Black-700 transition">SOMMERHØJSKOLE</a>
         <span class="ml-2 w-2 h-2 border-l-2 border-b-2 border-Black-500 transform -rotate-45"></span>
       </li>
-      <li class="flex items-center justify-between"><a href="#">PRISER</a></li>
+      <li><a href="#" class="hover:text-Black-700 transition">PRISER</a></li>
       <li class="relative group flex items-center justify-between">
-        <a href="#">OM OS</a>
+        <a href="#" class="hover:text-Black-700 transition">OM OS</a>
         <span class="ml-2 w-2 h-2 border-l-2 border-b-2 border-Black-500 transform -rotate-45"></span>
       </li>
       <li class="relative group flex items-center justify-between">
-        <a href="#">TILMELD</a>
+        <a href="#" class="hover:text-Black-700 transition">TILMELD</a>
         <span class="ml-2 w-2 h-2 border-l-2 border-b-2 border-Black-500 transform -rotate-45"></span>
       </li>
-      <li class="flex items-center justify-between"><a href="#">INFOMØDER</a></li>
+      <li><a href="#" class="hover:text-Black-700 transition">INFOMØDER</a></li>
     </ul>
   </nav>
 </div>
